@@ -31,10 +31,10 @@ Robustness Test
   <img src="./images/robustness_test.png" height='50%' width ='50%'><img src="./images/mrg_dp_graph.png" height='50%' width ='50%'>
 </figure>
 
-Left figure is robustness test result in ``Pointnet++`` paper. Three methods (Sigle-scale grouping (SSG), Multi-scale grouping(MSG), Multi-resolution grouping(MRG)) tested with random point dropout(DP). The official code uses dropout ratio ``[0, 0.875]``. 
+First figure is robustness test result in ``Pointnet++`` paper. Three methods (Sigle-scale grouping (SSG), Multi-scale grouping(MSG), Multi-resolution grouping(MRG)) tested with random point dropout(DP). The official code uses dropout ratio ``[0, 0.875]``. 
 ``MRG+DP`` model shows the lesast reduction of perfermances from 1024 to 128 test points. 
 
-Right figure is robustness test result of ``MRG+DP`` which I implemented. I also used dropout ratio ``[0, 0.875]``. 
+Second figure is robustness test result of ``MRG+DP`` which I implemented. I also used dropout ratio ``[0, 0.875]``. 
 
 |Number of Points|1024|768|512|256|128|
 |------|---|---|---|---|---|---|
