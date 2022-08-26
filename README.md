@@ -12,9 +12,27 @@ Acknowledgement
 Intrduction 
 -----------
 In pointnet++ paper, there are three classification methods(SSG, MSG, MRG). Above two repos provide SSG and MSG methods. 
-This repo only provide ``MRG for classifation`` in Pytorch. 
 
-* This code uses [erikwijmans/Pointnet2_PyTorch](https://github.com/erikwijmans/Pointnet2_PyTorch)
+* This repo only provide ``MRG for classifation`` in Pytorch. 
+
+* Other parts uses [erikwijmans/Pointnet2_PyTorch](https://github.com/erikwijmans/Pointnet2_PyTorch). 
+  
+```
+├── images
+├── pointnet2
+│   ├── config      
+│   │   ├── model
+│   │   │   └── mrg.yaml
+│   │   └── task_model
+│   │       └── cls-mrg.yaml
+│   └── models
+│       ├── __init__.py
+│       └── pointnet2_mrg_cls.py
+└── graph_visualization.py
+
+```
+
+
 
 Library Dependencies 
 ---------------------
@@ -48,3 +66,24 @@ MRG architecture
 </figure>
 This MRG model follow architecture in pointnet++ paper(page 11)
 
+
+
+Citation
+-------- 
+```
+@article{pytorchpointnet++,
+      Author = {Erik Wijmans},
+      Title = {Pointnet++ Pytorch},
+      Journal = {https://github.com/erikwijmans/Pointnet2_PyTorch},
+      Year = {2018}
+}
+
+@inproceedings{qi2017pointnet++,
+    title={Pointnet++: Deep hierarchical feature learning on point sets in a metric space},
+    author={Qi, Charles Ruizhongtai and Yi, Li and Su, Hao and Guibas, Leonidas J},
+    booktitle={Advances in Neural Information Processing Systems},
+    pages={5099--5108},
+    year={2017}
+}
+
+```
