@@ -1,0 +1,1 @@
+from pointnet2.models.pointnet2_mrg_cls import PointNet2ClassificationMRG
